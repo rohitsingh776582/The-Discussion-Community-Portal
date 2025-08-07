@@ -1,0 +1,31 @@
+:root {
+  --btn-bg-start: #0d47a1;
+  --btn-bg-end: #00e5ff;
+  --btn-hover-start: #0ef;
+  --btn-hover-end: #00d2ff;
+  --btn-text-color: #fff;
+  --btn-shadow: rgba(0, 238, 255, 0.4);
+  --btn-hover-shadow: rgba(0, 238, 255, 0.6);
+}
+
+
+.btn {
+  width: 100%;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, var(--btn-bg-start), var(--btn-bg-end));
+  border: none;
+  color: var(--btn-text-color);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--btn-shadow);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, var(--btn-hover-start), var(--btn-hover-end));
+  box-shadow: 0 6px 20px var(--btn-hover-shadow);
+  transform: translateY(-2px);
+}

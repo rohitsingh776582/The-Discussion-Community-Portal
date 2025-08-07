@@ -1,0 +1,108 @@
+
+
+.answer-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    font-family: Arial, sans-serif; 
+    width: 100%; 
+    max-width: 600px; 
+    box-sizing: border-box; 
+}
+
+.answer-author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.answer-author-info .faCircle { 
+    font-size: 28px; 
+    color: #888;
+    margin-right: 10px;
+}
+
+.answer-author-info .author-name {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    font-size: 15px;
+}
+
+.answer-author-info .answer-date {
+    font-size: 12px;
+    color: #777;
+    margin: 2px 0 0 0;
+}
+
+.answer-text-content {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Actions at the bottom of the answer card */
+.answer-actions-bottom {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    padding-top: 10px; 
+    border-top: 1px solid #eee; 
+    margin-top: 10px;
+}
+
+.answer-actions-bottom .action-btn-answer {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.answer-actions-bottom .action-btn-answer:hover {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.answer-actions-bottom .action-btn-answer .icon {
+    margin-right: 6px;
+    font-size: 18px; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .answer-card {
+        padding: 12px;
+    }
+    .answer-author-info .faCircle {
+        font-size: 24px;
+    }
+    .answer-author-info .author-name {
+        font-size: 14px;
+    }
+    .answer-author-info .answer-date {
+        font-size: 11px;
+    }
+    .answer-text-content {
+        font-size: 14px;
+    }
+    .answer-actions-bottom {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .answer-actions-bottom .action-btn-answer {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+    .answer-actions-bottom .action-btn-answer .icon {
+        font-size: 16px;
+    }
+}

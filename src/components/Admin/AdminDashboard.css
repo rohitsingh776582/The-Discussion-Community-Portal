@@ -1,0 +1,213 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #1e1e2f;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.date-range {
+    background: #333;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+}
+
+.top-cards {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.card{
+
+    background-color: #2a2a3d;
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1;
+    min-width: 220px;
+}
+
+
+.card.stat h2 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.charts-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.chart {
+    flex: 1;
+    min-width: 300px;
+}
+
+.circle-charts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.circle-charts p {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.boxContnear {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box {
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    min-width: 280px;
+    background-color: #2a2a3d;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.userbox {
+    border-radius: 16px;
+    padding: 20px;
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    border: 1px solid rgba(0, 128, 0, 0.2);
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.userbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.userbox p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+#userButton {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ffffff, #f1f8f4);
+    border: 1px solid #c8e6c9;
+    border-radius: 12px;
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#userButton:hover {
+    background: linear-gradient(135deg, #e8f5e9, #dcedc8);
+    color: #1b5e20;
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.3);
+    transform: translateY(-2px);
+}
+
+#userButton:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(46, 125, 50, 0.2);
+}
+
+.userbox button:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.box-paraGraph {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    line-height: 1.5;
+    word-wrap: break-word;
+
+}
+
+.common {
+    color: #e0e0e0;
+}
+
+.boxContnear button {
+    margin-top: 0.8rem;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.dashboard-header button {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+
+}
+
+.boxContnear button:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-cards {
+        flex-direction: column;
+    }
+
+    .charts-row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .boxContnear {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+.auth-page {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden; 
+  position: relative;
+}

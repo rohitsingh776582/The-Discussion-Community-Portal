@@ -1,0 +1,145 @@
+.question-card {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.question-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+}
+
+.star {
+    fill: #dc2626;
+    width: 1rem;
+    height: 1rem;
+}
+
+.question-text p,
+.AnswerThequestion p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+}
+
+.question-text,
+.AnswerThequestion {
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.meta-info {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.question-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    padding: 0;
+}
+.action-btn:hover {
+    color: #2563eb;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.arrow {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: #2563eb;
+}
+
+.answer-section {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0a66c2;
+    border-radius: 8px;
+}
+
+.answer-author {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    display: flex;
+    gap: 10px;
+}
+
+.answer-text {
+    color: #444;
+    line-height: 1.6;
+}
+
+.faCircle {
+    font-size: 45px;
+}
+
+.answerAndcircle {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.AnswerThequestion {
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.faCircleAnser {
+    font-size: 40px;
+    color: gray;
+}
+
+@media (max-width: 480px) {
+    .question-card {
+        margin: 1rem;
+        padding: 0.75rem;
+    }
+    .question-text {
+        font-size: 1rem;
+    }
+
+    .question-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .arrow {
+        margin-left: 0;
+    }
+}

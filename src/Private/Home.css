@@ -1,0 +1,23 @@
+
+.main {
+    display: flex;
+    margin-top:80px;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    flex-wrap: wrap;
+}
+
+.main>div:nth-child(1) {
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.question_card {
+    flex: 2 1 500px;
+    min-width: 300px;
+}
+
+.TopicsCard {
+    flex: 1 1 250px;
+}
